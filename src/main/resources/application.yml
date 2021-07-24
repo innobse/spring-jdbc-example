@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/cars"
+    username: "user"
+    password: "pass"
+#  flyway:
+#    locations: classpath:/migration/flyway
+  liquibase:
+    change-log: classpath:/db/changelog/db-changelog-master.yaml
